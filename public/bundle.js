@@ -51,6 +51,7 @@
 	var GreeterMessage = __webpack_require__(159);
 	var GreeterForm = __webpack_require__(160);
 	var Greeter = __webpack_require__(161);
+
 	ReactDOM.render(React.createElement(Greeter, { name: 'Andy', message: 'This is sample message' }), document.getElementById('app'));
 
 /***/ },
