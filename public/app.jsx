@@ -1,5 +1,5 @@
-/* global React */
-/* global ReactDOM */
+var React = require('react');
+var ReactDOM = require('react-dom');
 
 // Messages
 var GreeterMessage = React.createClass({
