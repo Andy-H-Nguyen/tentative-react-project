@@ -5,7 +5,7 @@ var Drawer = React.createClass({
     
   render: function () {
     return (
-        <img src={Logo}/>
+        <h1>This is dashboard</h1>
     )
   }
 });

@@ -1,6 +1,55 @@
-.login-container {
+/* Variables */
+$app-link-tile-bg:#fff;
+$input-field-border: #00479f;
+$input-field-color: #000;
+$background-color: #00479f;
+
+.user-preview-container {
     max-width: 300px;
     margin: 0 auto;
     position: relative;
-    height: 70vh;
+    height: 20vh;
+}
+
+.form-container {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    height: 50vh;
+}
+
+.form-input-container {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid $input-field-border;
+    border-radius: 100px;
+    padding: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: 0;
+    position: relative;
+}
+
+.form-input-container-next {
+    display: block;
+    color: white;
+    background-color: $background-color;
+    box-sizing: border-box;
+    border: 1px solid $input-field-border;
+    border-radius: 100px;
+    padding: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: 0;
+    position: relative;
+}
+
+.form-input {
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+
+.form-input:focus {
+    outline: none;
 }

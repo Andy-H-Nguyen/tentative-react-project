@@ -1,29 +1,19 @@
-export var emailInput = () => {
+export var setEmailText = (emailText) => {
   return {
-    type: 'EMAIL_KEY_INPUT'
+    type: 'SET_EMAIL_TEXT',
+    emailText
   };
 };
 
-export var passwordInput = () => {
+export var setPasswordText = (passwordText) => {
   return {
-    type: 'EMAIL_KEY_INPUT'
+    type: 'SET_PASSWORD_TEXT',
+    passwordText
   };
 };
 
-export var loginSuccess = () => {
+export var loginComplete = () => {
   return {
-    type: 'LOGIN_SUCCESS'
-  };
-};
-
-export var emailVerify = () => {
-  return {
-    type: 'ADD_TODOS'
-  };
-};
-
-export var toggleTodo = (id) => {
-  return {
-    type: 'TOGGLE_TODO'
+    type: 'LOGIN_COMPLETE'
   };
 };

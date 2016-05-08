@@ -7,6 +7,7 @@ var store = require('configureStore').configure();
 var actions = require('actions');
 var LoginApp = require('LoginApp');
 var LoginAPI = require('LoginAPI');
+var Drawer = require('Drawer');
 
 store.subscribe(() => {
   var state = store.getState();
@@ -21,7 +22,11 @@ require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
   <Provider store={store}>
-    <LoginApp/>
+    <Router history={hashHistory}>
+      <Route path="/" component={LoginApp}>
+      </Route>
+      <Route path="/dashboard" component={Drawer}></Route>
+    </Router>
   </Provider>,
   document.getElementById('app')
 );
