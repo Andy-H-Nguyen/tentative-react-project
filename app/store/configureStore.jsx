@@ -7,8 +7,9 @@ export var configure = (initialState = {}) => {
     showCompleted: showCompletedReducer,
     todos: todosReducer
   });
-
+  
   var store = redux.createStore(reducer, initialState, redux.compose(
+    // Enable React Dev tools
     window.devToolsExtension ? window.devToolsExtension() : f => f
   ));
 

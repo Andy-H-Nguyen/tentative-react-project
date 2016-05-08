@@ -1,33 +1,29 @@
-export var setSearchText = (searchText) => {
+export var emailInput = () => {
   return {
-    type: 'SET_SEARCH_TEXT',
-    searchText
+    type: 'EMAIL_KEY_INPUT'
   };
 };
 
-export var toggleShowCompleted = () => {
+export var passwordInput = () => {
   return {
-    type: 'TOGGLE_SHOW_COMPLETED'
+    type: 'EMAIL_KEY_INPUT'
   };
 };
 
-export var addTodo = (text) => {
+export var loginSuccess = () => {
   return {
-    type: 'ADD_TODO',
-    text
+    type: 'LOGIN_SUCCESS'
   };
 };
 
-export var addTodos = (todos) => {
+export var emailVerify = () => {
   return {
-    type: 'ADD_TODOS',
-    todos
+    type: 'ADD_TODOS'
   };
 };
 
 export var toggleTodo = (id) => {
   return {
-    type: 'TOGGLE_TODO',
-    id
+    type: 'TOGGLE_TODO'
   };
 };
