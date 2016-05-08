@@ -21,7 +21,7 @@ require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
   <Provider store={store}>
-    <h1>Main Page</h1>
+    <LoginApp/>
   </Provider>,
   document.getElementById('app')
 );
