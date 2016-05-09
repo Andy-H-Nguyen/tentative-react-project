@@ -2,8 +2,8 @@ var React = require('react');
 var {connect} = require('react-redux');
 var actions = require('actions');
 var LoginAPI = require('LoginAPI');
-var { browserHistory } = require ('react-router');
 
+var UserPreview = require('UserPreview');
 import Logo from '../img/washington-department-of-health-2151214158-std.png';
 import User from '../img/group-2.png';
 import Password from '../img/group.png';
@@ -19,15 +19,14 @@ var Form = React.createClass({
     dispatch(actions.setPasswordText(password));
     
     if (LoginAPI.authenticate) {
-      dispatch(actions.loginComplete());
-      browserHistory.push('#/dashboard');
+      dispatch(actions.loginComplete);
     }
   },
   render: function () {
     var {dispatch} = this.props;
     return (
         <div>
-          <div className="user-preview-container"></div>
+          <UserPreview/>
           <form onSubmit={this.handleSubmit}>
             <div className="form-container">
               <div className="form-input-container">

@@ -23,8 +23,7 @@ require('style!css!sass!applicationStyles')
 ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>
-      <Route path="/" component={LoginApp}>
-      </Route>
+      <Route path="/" component={LoginApp}></Route>
       <Route path="/dashboard" component={Drawer}></Route>
     </Router>
   </Provider>,
